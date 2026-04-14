@@ -45,7 +45,7 @@ moneta.lancia
 print(moneta)
 moneta2.lancia()
 print(moneta2)
-'''
+
 
 class Veicolo():
 
@@ -68,4 +68,31 @@ class Veicolo():
     def get_speed(self):
         return self.speed
     
+'''
 
+class Canguro():
+
+    def __init__(self,tasca=None):
+        if tasca==None:
+            self._tasca=[]
+        else: self._tasca=tasca
+
+    def __str__(self):
+        return str(self._tasca)
+    
+    def get_tasca(self):
+        return self._tasca
+    
+    def intasca(self,item):
+        self._tasca.append(item)
+
+cang=Canguro()
+uro=Canguro()
+
+cang.intasca(1)
+uro.intasca("ciao")
+print(cang)
+print(uro)
+
+    
+    

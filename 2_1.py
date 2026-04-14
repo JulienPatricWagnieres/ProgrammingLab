@@ -75,11 +75,11 @@ def somma_shampoo(nome_file):
     for riga in file:
         riga=riga.strip()
         riga_l=riga.split(',')
-        print(riga_l[0],riga_l[1])
+        #print(riga_l[0],riga_l[1])
         if riga_l[0]!="Date":
             somma+=float(riga_l[1])
     file.close()
     return somma
          
-#print(somma_shampoo('shampoo_sales.csv'))
+print(somma_shampoo('shampoo_sales.csv'))
 
