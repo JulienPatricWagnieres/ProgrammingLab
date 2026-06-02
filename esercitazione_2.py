@@ -92,4 +92,4 @@ file=CSVTimeSeriesFile()
 time_s = file.get_data()
 print(compute_variation(time_s,"1950","1960"))
 
-help(reduce)
+
